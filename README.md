@@ -1,4 +1,4 @@
-# Fanfou
+# Yinshui [饮水]
 A microblog Jekyll template inspired by twitter&fanfou
 
 
