@@ -1,0 +1,44 @@
+title: "桑 麻"
+author: "@weiheng"
+description: "把酒话桑麻"
+baseurl: ""
+url: "http://bb.hengwei.me"
+email: "jj@hengwei.me"
+permalink: "/:year/:month/:day/:hour/:minute.html"
+relative_permalinks: false
+paginate: 20
+paginate_path: "/page/:num/"
+timezone: Asia/Shanghai  # A list of all available values can be found at https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+highlighter: "rouge"
+markdown: "kramdown"
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: posts
+        values:
+            title: ""
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jemoji
+  - jekyll-timeago
+  - jekyll-hashtags
+
+jekyll-mentions:
+  base_url: https://twitter.com

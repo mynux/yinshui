@@ -1,0 +1,12 @@
+---
+title: 梅雨
+layout: post
+tags: []
+date: 2015-07-30 17:22:57.150000
+---
+梅雨连天闲陋室，  
+归燕乘雨筑巢枝。  
+枯灯孤坐夜过半，  
+万缕千丝盼君知。  
+
+![]({{site.cdnurl}}/assets/images/posts/2015/07/158f7c80983d7174bfa23f6cb707b35c.jpg)

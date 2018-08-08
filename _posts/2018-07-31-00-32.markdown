@@ -1,0 +1,9 @@
+---
+title: 
+layout: post
+date: 2018-07-31 00:32:37.111222
+---
+
+@DidiHeng Do not **#reinventTheWheels**, since we already has the jekyll-mentions and jekyll hashtag :smiley:, is that right?
+
+[cheatsheet emoji](https://www.webpagefx.com/tools/emoji-cheat-sheet/)

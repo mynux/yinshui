@@ -1,0 +1,7 @@
+---
+title: 
+layout: post
+date: 2018-07-30 04:59:56.815706
+---
+
+从本地CR到pipeline是一种进步；利用local-override是更进一步；会用remote-override则更完美。#AMZN
