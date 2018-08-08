@@ -87,6 +87,10 @@ header h4 {
   list-style-position: outside;
 }
 
+.bio, #wrapper  {
+  text-align: center;
+}
+
 .bio p:first-child {
   margin-top: 0;
 }
