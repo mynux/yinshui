@@ -9,4 +9,4 @@ date: 2015-07-30 17:22:57.150000
 枯灯孤坐夜过半，  
 万缕千丝盼君知。  
 
-![]({{site.cdnurl}}/yinshui/assets/images/posts/2015/07/meiyu.jpg)
+![]({{site.cdnurl}}/assets/yinshui/images/posts/2015/07/meiyu.jpg)
