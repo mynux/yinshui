@@ -4,7 +4,7 @@ layout: post
 tags: []
 date: 2015-08-09 06:18:37.421000
 ---
-#####带着同情心，乐观的前行
+#### 带着同情心，乐观的前行
 －－比尔梅琳达斯坦福大学演讲观后感
 ![]({{site.cdnurl}}/yinshui/assets/images/posts/2015/08/bill_melinda_standford.jpg)
 
@@ -14,5 +14,5 @@ date: 2015-08-09 06:18:37.421000
 
 即使是在绝境之中，乐观也会加速创新，产生新的避免痛苦的方法。但是如果你从未看过那些痛苦折磨着的人时，你的乐观也将无能为力。你也将不会改变他们的世界。而如果我们能在乐观中融入同情，我们就能解决贫困，疾病以及教育匮乏的问题。带着同情心，乐观的前行，这是盖茨夫妇教给我们的。  
 
-So when we strip away all of our luck and our privilege and we consider where we would be without them, it becomes someone much easier to see someone who is poor and say, that could be me. And that's empathy. Empathy tears down barriers and it opens up whole new frontiers for optimism。  
+>So when we strip away all of our luck and our privilege and we consider where we would be without them, it becomes someone much easier to see someone who is poor and say, that could be me. And that's empathy. Empathy tears down barriers and it opens up whole new frontiers for optimism。  
 So here is our appeal to you all. As you leave Stanford, take all your genius and your optimism and your empathy, and go change the world in ways that will make millions of people optimistic. 
