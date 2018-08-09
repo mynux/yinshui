@@ -4,7 +4,7 @@ layout: post
 tags: []
 date: 2014-12-04 08:38:38.383000
 ---
-![]({{site.cdnurl}}/assets/images/posts/2015/07/IMG_1522.jpg)
+![]({{site.cdnurl}}/yinshui/assets/images/posts/2015/07/IMG_1522.jpg)
 渭城朝雨，一霎挹轻尘。更洒遍客舍青青，千缕柳色新。休烦恼，劝君更尽一杯酒，人生会少，自古富贵功名有定分。莫遣容仪受损。  
 休烦恼，劝君更尽一杯酒，只恐怕西出阳关，旧游如梦，眼前无故人。
 
