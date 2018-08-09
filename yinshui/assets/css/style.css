@@ -186,6 +186,9 @@ code.highlighter-rouge {
 }
 
 /* Post */
+.post-body {
+  text-align: left;
+}
 
 .post-body li {
   padding-left: 20px;
