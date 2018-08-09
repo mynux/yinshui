@@ -9,7 +9,7 @@ layout: default
         <a class="u-url" href="{{ "/" | relative_url  }}" rel="me"><span class="p-author">{{ site.author }}</span></a>
       </li>
       <li>
-        <img class="u-photo" src="{{ "/" | relative_url  }}assets/images/avatar.svg" alt="">
+        <img class="u-photo" src="{{site.cdnurl}}/yinshui/assets/images/avatar.svg" alt="">
       </li>
       <li>
         <a href="mailto:{{ site.email }}" class="u-email" rel="me">{{ site.email }}</a>
@@ -32,7 +32,7 @@ layout: default
 </article>
 <section id="post-meta" class="clearfix">
   <a href="/">
-    <img class="avatar" src="{{ "/" | relative_url  }}assets/images/avatar.svg">
+    <img class="avatar" src="{{site.cdnurl}}/yinshui/assets/images/avatar.svg">
     <div>
       <span class="dark">{{ site.author }}</span>
       <span>{{ site.description }}</span>

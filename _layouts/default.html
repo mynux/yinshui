@@ -13,12 +13,12 @@
   {% else %}
   <title>{{ site.title }}{% assign exist_or_not = page.title | size %}{% if exist_or_not < 1 %} - Status{% else %} - {{ page.title }}{% endif %}</title>
   {% endif %}
-  <link href="{{ "/" | relative_url  }}assets/css/style.css" rel="stylesheet">
-  <link href="{{ "/" | relative_url  }}assets/css/highlight.css"rel="stylesheet">
-  <link href="{{ "/" | relative_url  }}assets/images/fav32.png" sizes="32x32" rel="icon">
-  <link href="{{ "/" | relative_url  }}assets/images/fav192.png" sizes="192x192" rel="icon">
-  <link href="{{ "/" | relative_url  }}feed.json" title="{{ site.title }}" type="application/json" rel="alternate">
-  <link href="{{ "/" | relative_url  }}feed.xml" title="{{ site.title }}" type="application/rss+xml" rel="alternate">
+  <link href="{{site.cdnurl}}/yinshui/assets/css/style.css" rel="stylesheet">
+  <link href="{{site.cdnurl}}/yinshui/assets/css/highlight.css"rel="stylesheet">
+  <link href="{{site.cdnurl}}/yinshui/assets/images/fav32.png" sizes="32x32" rel="icon">
+  <link href="{{site.cdnurl}}/yinshui/assets/images/fav192.png" sizes="192x192" rel="icon">
+  <link href="{{site.cdnurl}}/yinshui/feed.json" title="{{ site.title }}" type="application/json" rel="alternate">
+  <link href="{{site.cdnurl}}/yinshui/feed.xml" title="{{ site.title }}" type="application/rss+xml" rel="alternate">
 </head>
 <body>
   {% include navigation.html %}
