@@ -81,6 +81,7 @@ header h4 {
   height: 80px;
   margin-bottom: 1em;
   border-radius: 40px;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #efefef;
 }
 
 .bio li {
@@ -423,7 +424,7 @@ h2.headline {
   width: 36px;
   float: left;
   margin-right: 15px;
-  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px #efefef;
   border-radius: 50%;
 }
 
