@@ -36,6 +36,7 @@ defaults:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-mentions
   - jemoji
   - jekyll-timeago
