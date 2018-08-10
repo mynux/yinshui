@@ -5,5 +5,6 @@ group :jekyll_plugins do
   gem 'jekyll-timeago'
   gem 'jekyll-hashtags'
 end
+gem 'jekyll-paginate'
 gem 'jekyll-mentions'
 gem 'jemoji'
