@@ -43,5 +43,8 @@ git remote add yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
 git remote set-url yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
 
 ## push current master branch to remote yinshui.
+## option1: push to remote yinshui repo according to current github remote hashref.
 git push yinshui origin/master
+## option2: push to remote yinshui repo according to current local head hashref.
+git push yinshui HEAD:master
 ```shell
