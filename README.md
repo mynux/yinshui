@@ -14,6 +14,19 @@ $ mkdir fanfou.git
 $ cd fanfou.git
 $ git init --bare
 
+Remote hooks/post-receive
+```shell
+#!/bin/bash -l
+GIT_REPO=$HOME/repos/t.hengwei.me.git
+TMP_GIT_CLONE=$HOME/tmp/git/t.hengwei.me
+PUBLIC_WWW=/var/www/t.hengwei.me
+
+git clone $GIT_REPO $TMP_GIT_CLONE
+jekyll build --source $TMP_GIT_CLONE --destination $PUBLIC_WWW
+rm -Rf $TMP_GIT_CLONE
+exit
+```
+
 [LOCAL]
 sh-add ~/aws/w-pro15.pem
 git remote add ec2-user@mynux.cn:~/repos/fanfou.git
