@@ -6,15 +6,19 @@ A microblog Jekyll template inspired by twitter&fanfou
 2. `bundle install`
 3. `bundle exec jekyll server`
 
-##Setting remtoe repotory on EC2 CMD:
-
-[REMOTE]
+## Setting remtoe repotory on EC2 CMD:
 Install git if not available via apt-get (Ubuntu) or yum install (CentOS)
+
+### REMOTE
+
+```shell
 $ mkdir yinshui.git
 $ cd yinshui.git
 $ git init --bare
+```shell
 
 Remote hooks/post-receive
+
 ```shell
 #!/bin/bash -l
 GIT_REPO=$HOME/repos/t.hengwei.me.git
@@ -27,10 +31,13 @@ rm -Rf $TMP_GIT_CLONE
 exit
 ```
 
-[LOCAL]
+### LOCAL
+
+```shell
 ssh-add ~/aws/w-pro15.pem
 git remote -v
 
 git remote add yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
 git remote set-url yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
 git push origin HEAD:yinshui
+```shell
