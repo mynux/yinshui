@@ -253,6 +253,7 @@ DEPENDENCIES
   github-pages
   jekyll-hashtags
   jekyll-mentions
+  jekyll-paginate
   jekyll-timeago
   jemoji
 
