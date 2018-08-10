@@ -31,6 +31,6 @@ exit
 ssh-add ~/aws/w-pro15.pem
 git remote -v
 
-git remote set-url origin ec2-user@b.hengwei.me:~/repos/yinshui.git
 git remote add yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
+git remote set-url yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
 git push origin HEAD:yinshui
