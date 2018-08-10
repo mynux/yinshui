@@ -6,7 +6,7 @@ A microblog Jekyll template inspired by twitter&fanfou
 2. `bundle install`
 3. `bundle exec jekyll server`
 
-## Setting remtoe repotory on EC2 CMD:
+## Setting remote repotory on EC2 CMD:
 Install git if not available via apt-get (Ubuntu) or yum install (CentOS)
 
 ### REMOTE
@@ -15,7 +15,7 @@ Install git if not available via apt-get (Ubuntu) or yum install (CentOS)
 $ mkdir yinshui.git
 $ cd yinshui.git
 $ git init --bare
-```shell
+```
 
 Remote hooks/post-receive
 
