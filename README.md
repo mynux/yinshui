@@ -14,3 +14,12 @@ $ mkdir fanfou.git
 $ cd fanfou.git
 $ git init --bare
 
+[LOCAL]
+sh-add ~/aws/w-pro15.pem
+git remote add ec2-user@mynux.cn:~/repos/fanfou.git
+git remote -v
+git remote rm yinshui
+
+git remote set-url yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
+git remote add yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
+git push origin HEAD:yinshui
