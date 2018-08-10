@@ -35,9 +35,13 @@ exit
 
 ```shell
 ssh-add ~/aws/w-pro15.pem
+
+# useful command to display remote branch.
 git remote -v
 
 git remote add yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
 git remote set-url yinshui ec2-user@b.hengwei.me:~/repos/yinshui.git
-git push origin HEAD:yinshui
+
+## push current master branch to remote yinshui.
+git push yinshui origin/master
 ```shell
