@@ -1,0 +1,7 @@
+---
+title: 
+layout: post
+date: 2018-08-11 17:05:06.472660
+---
+
+Isso评论系统确实是个好东西，折腾起来也还算容易，但是需要具备基本的server知识，如#nginx,#uwsgi等。本来想把他安排在一个独立的域名，但是无奈由于[CROS问题](https://github.com/posativ/isso/issues/347)，即使nginx反向代理也不太管用。暂时作罢。。
