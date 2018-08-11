@@ -22,7 +22,7 @@ layout: default
     {% endif %}
     <h2 class="headline">
       <time class="dt-published" datetime="{{ post.date }}">
-        <a class="u-url dates" href="{{ site.baseurl }}/{{ page.url | remove_first: '/' }}">{{ post.date | date:"%-I:%M %p, %b %-d" }}</a>
+        <a class="u-url dates" href="{{ site.baseurl }}/{{ page.url | remove_first: '/' }}">{{ page.date | date:"%-I:%M %p, %b %-d" }}</a>
       </time>
     </h2>
   </header>
