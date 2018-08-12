@@ -1,0 +1,8 @@
+---
+title: 
+layout: post
+date: 2018-08-11 22:08:06.472660
+---
+
+selenium 的用途真是广泛啊，在公司爬#PaymentContract数据需要,如今爬QQ空间数据竟然也是一大利器。模拟登录获取cookie真是有用，以后估计还会用得着。
+其次python使用起来真是方便，regex的使用这块`re.sub()`往往比`re.match()`还有效，尤其是backref时。
