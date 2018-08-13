@@ -1,6 +1,7 @@
 ---
 title: 大雪，故宫，三人行。
 layout: post
+category: memories
 tags: []
 date: 2016-01-02 06:33:34.864000
 ---

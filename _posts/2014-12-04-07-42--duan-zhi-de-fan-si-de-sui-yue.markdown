@@ -1,6 +1,7 @@
 ---
 title: 一段值得反思的岁月
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:42:33.453000
 ---

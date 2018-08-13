@@ -1,6 +1,7 @@
 ---
 title: 江湖笑
 layout: post
+category: memories
 tags: [忘忧草, 江湖笑]
 date: 2015-07-30 17:52:50.966000
 ---

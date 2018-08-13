@@ -1,6 +1,7 @@
 ---
 title: 诶，这片草原！
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 08:14:02.317000
 ---

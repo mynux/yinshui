@@ -1,6 +1,7 @@
 ---
 title: 与其说是传记，却不如称为Amazon大事年表
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:34:24.176000
 ---

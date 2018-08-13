@@ -4,7 +4,7 @@ description: ""
 baseurl: ""
 url: "http://b.hengwei.me"
 email: "jj@hengwei.me"
-permalink: "/:year/:month/:day/:hour/:minute.html"
+permalink: "/:categories/:year/:month/:day/:hour/:minute.html"
 relative_permalinks: false
 paginate: 20
 paginate_path: "/page/:num/"

@@ -1,6 +1,7 @@
 ---
 title: 我的2014
 layout: post
+category: memories
 tags: []
 date: 2014-12-05 05:48:41.306000
 ---

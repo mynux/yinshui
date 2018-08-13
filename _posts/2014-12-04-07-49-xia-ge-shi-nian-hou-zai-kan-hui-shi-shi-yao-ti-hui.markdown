@@ -1,6 +1,7 @@
 ---
 title: 下一个十年后再看会是什么体会？
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:49:44.429000
 ---

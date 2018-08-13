@@ -1,6 +1,7 @@
 ---
 title: 比尔梅琳达斯坦福演讲
 layout: post
+category: memories
 tags: []
 date: 2015-08-09 06:18:37.421000
 ---

@@ -1,6 +1,7 @@
 ---
 title: 从读《进化心理学》看进化的随机性
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:32:32.557000
 ---

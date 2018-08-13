@@ -1,6 +1,7 @@
 ---
 title: 石头城.送别
 layout: post
+category: memories
 tags: [石头城, 送别]
 date: 2015-07-30 17:55:40.735000
 ---

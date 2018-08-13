@@ -1,6 +1,7 @@
 ---
 title: 游圆明园
 layout: post
+category: memories
 tags: [游记, 圆明园]
 date: 2015-07-30 17:17:37.308000
 ---

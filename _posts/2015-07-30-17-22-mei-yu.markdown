@@ -1,6 +1,7 @@
 ---
 title: 梅雨
 layout: post
+category: memories
 tags: []
 date: 2015-07-30 17:22:57.150000
 ---

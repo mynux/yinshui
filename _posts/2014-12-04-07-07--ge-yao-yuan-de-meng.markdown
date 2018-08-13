@@ -1,6 +1,7 @@
 ---
 title: 一个遥远的梦
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:07:18.824000
 ---

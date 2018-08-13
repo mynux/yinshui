@@ -1,6 +1,7 @@
 ---
 title: 赠君
 layout: post
+category: memories
 tags: [赠君]
 date: 2015-07-30 17:58:48.193000
 ---

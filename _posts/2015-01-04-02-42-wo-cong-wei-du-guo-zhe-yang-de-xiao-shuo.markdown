@@ -1,6 +1,7 @@
 ---
 title: 我从未读过这样的小说
 layout: post
+category: memories
 tags: []
 date: 2015-01-04 02:42:54.754000
 ---

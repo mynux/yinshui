@@ -1,6 +1,7 @@
 ---
 title: 冷艳凄美的心
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:15:35.931000
 ---

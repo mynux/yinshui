@@ -1,6 +1,7 @@
 ---
 title: 暑中夜谈
 layout: post
+category: memories
 tags: [暑中夜谈]
 date: 2015-07-30 18:02:20.440000
 ---

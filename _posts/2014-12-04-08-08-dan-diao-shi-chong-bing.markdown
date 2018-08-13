@@ -1,6 +1,7 @@
 ---
 title: 单调是一种病
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 08:08:39.724000
 ---

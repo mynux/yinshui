@@ -1,6 +1,7 @@
 ---
 title: 沙尘走金陵
 layout: post
+category: memories
 tags: [沙尘走金陵]
 date: 2015-07-30 17:50:55.712000
 ---

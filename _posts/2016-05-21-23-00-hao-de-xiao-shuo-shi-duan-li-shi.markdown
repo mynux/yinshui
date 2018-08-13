@@ -1,6 +1,7 @@
 ---
 title: 好的小说是一段历史
 layout: post
+category: memories
 tags: []
 date: 2016-05-21 23:00:01.294000
 ---

@@ -1,6 +1,7 @@
 ---
 title: SUMMER IS COMING
 layout: post
+category: memories
 tags: [盛夏将至]
 date: 2015-07-23 01:16:13.206000
 ---

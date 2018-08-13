@@ -1,6 +1,7 @@
 ---
 title: 从语言本身谈语言
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:57:32.606000
 ---

@@ -1,6 +1,7 @@
 ---
 title: 大花猫
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 08:40:40.468000
 ---

@@ -1,6 +1,7 @@
 ---
 title: 飞鸿何处？
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 08:36:36.618000
 ---

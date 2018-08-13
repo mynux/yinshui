@@ -1,6 +1,7 @@
 ---
 title: 又一年，古都银杏
 layout: post
+category: memories
 tags: []
 date: 2015-11-22 03:12:59.301000
 ---

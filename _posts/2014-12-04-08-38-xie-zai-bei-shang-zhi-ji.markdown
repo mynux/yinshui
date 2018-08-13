@@ -1,6 +1,7 @@
 ---
 title: 写在北上之际
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 08:38:38.383000
 ---

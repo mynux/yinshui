@@ -1,6 +1,7 @@
 ---
 title: 精神栖居离不开审美
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:52:12.298000
 ---

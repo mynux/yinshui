@@ -1,6 +1,7 @@
 ---
 title: 从语言本身到设计模式
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 08:00:04.875000
 ---

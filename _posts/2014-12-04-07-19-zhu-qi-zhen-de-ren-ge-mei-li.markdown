@@ -1,6 +1,7 @@
 ---
 title: 朱祁镇的人格魅力
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:19:51.218000
 ---

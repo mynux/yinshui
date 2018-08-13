@@ -1,6 +1,7 @@
 ---
 title: penny喵和卷卷汪的爱情故事（前传）
 layout: post
+category: memories
 tags: [penny喵和卷卷汪的爱情故事（前传）]
 date: 2015-08-03 20:20:21.378000
 ---

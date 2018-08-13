@@ -1,6 +1,7 @@
 ---
 title: 任何好的code都是不断修改完善的过程
 layout: post
+category: memories
 tags: []
 date: 2014-12-03 07:35:00.362000
 ---

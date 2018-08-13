@@ -1,6 +1,7 @@
 ---
 title: 书店是小岛爱的幌子
 layout: post
+category: memories
 tags: []
 date: 2016-04-22 03:38:46.263000
 ---

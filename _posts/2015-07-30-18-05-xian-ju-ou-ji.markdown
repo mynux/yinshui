@@ -1,6 +1,7 @@
 ---
 title: 闲居偶寄
 layout: post
+category: memories
 tags: [闲居偶寄]
 date: 2015-07-30 18:05:20.549000
 ---

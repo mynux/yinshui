@@ -1,6 +1,7 @@
 ---
 title: 阳台山·大觉寺
 layout: post
+category: memories
 tags: [谑古词, 阳台山, 大觉寺]
 date: 2015-07-30 17:01:00.196000
 ---

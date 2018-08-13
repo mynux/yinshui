@@ -1,6 +1,7 @@
 ---
 title: 追月之人
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:38:40.934000
 ---

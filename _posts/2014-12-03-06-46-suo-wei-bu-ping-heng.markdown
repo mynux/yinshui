@@ -1,6 +1,7 @@
 ---
 title: 所谓'不平衡'
 layout: post
+category: memories
 tags: [渡边淳一, 日本文学]
 date: 2014-12-03 06:46:08.604000
 ---

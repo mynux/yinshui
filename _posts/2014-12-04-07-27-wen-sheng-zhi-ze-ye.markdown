@@ -1,6 +1,7 @@
 ---
 title: 文胜质则野
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:27:05.291000
 ---

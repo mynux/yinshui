@@ -1,6 +1,7 @@
 ---
 title: 通俗才是生活
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:54:26.135000
 ---

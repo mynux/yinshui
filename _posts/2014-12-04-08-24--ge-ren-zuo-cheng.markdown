@@ -1,6 +1,7 @@
 ---
 title: 一个人，一座城
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 08:24:11.173000
 ---

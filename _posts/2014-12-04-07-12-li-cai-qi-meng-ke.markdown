@@ -1,6 +1,7 @@
 ---
 title: 理财启蒙课
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:12:33.455000
 ---

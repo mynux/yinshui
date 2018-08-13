@@ -1,6 +1,7 @@
 ---
 title: 我所期望的2016
 layout: post
+category: memories
 tags: []
 date: 2016-01-01 07:31:52.244000
 ---

@@ -1,6 +1,7 @@
 ---
 title: 有学者味的历史
 layout: post
+category: memories
 tags: []
 date: 2014-12-04 07:30:03.801000
 ---

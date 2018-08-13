@@ -1,6 +1,7 @@
 ---
 title: 访容若
 layout: post
+category: memories
 tags: []
 date: 2015-07-23 07:48:36.377000
 ---

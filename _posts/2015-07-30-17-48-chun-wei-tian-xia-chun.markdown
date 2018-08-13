@@ -1,6 +1,7 @@
 ---
 title: 春·为天下春
 layout: post
+category: memories
 tags: [春, 为天下春]
 date: 2015-07-30 17:48:37.746000
 ---
