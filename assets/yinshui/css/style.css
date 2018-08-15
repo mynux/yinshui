@@ -247,15 +247,13 @@ pre  {
   font-family:Menlo, Monaco, Courier;
   white-space:pre-wrap;
   padding:20px;
-  background-color:#fdfdfd;
   overflow:auto;
   border-radius: 5px;
-  background: #272b2d;
+  background: #efefef;
   font-family: "Source Code Pro",Menlo,monospace;
   font-size: 13px;
   line-height: 1.5em;
   font-weight: 500;
-  color: #d0d4d7;
 }
 
 table {
