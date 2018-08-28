@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2018-08-28 04:12:40.944458
+---
+
+在#AMZN 做事一个非常大的challenge是如何选择一个切实有效的solution来解决确定的timeline下的问题。且多数时候，不得不放弃最优solution，而采用各种workaround，这是SDE的失败。
+1. 比如用OrderCondition解决repay的问题，事实证明这个solution留下了非常大的坑。当时选择的一个依据是WCS的review过程很慢,RW的延时要求，以及最重要的PCES没有好的query接口。 
+2. 比如这次的Oracle2RDS迁移，DMS的方案推行了一个星期了还是推不动。不得不考虑退而求其次的goldengate方案。
+
+于是这一次次的教训表明走熟悉的，自己能掌控的solution往往才能让你能match到timeline，但是往往因为自己own的service有限，能改动的地方也有限，一次次的局部最优解最终会让系统指数级变烂。
