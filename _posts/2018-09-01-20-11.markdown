@@ -1,0 +1,7 @@
+---
+title: 
+layout: post
+date: 2018-09-01 20:11:08.320425
+---
+
+这两天被所谓AWS的Database Migration Service整的焦头烂额，但总结为一点就是对于一名需要解决实际问题的SDE来说，log,log,log，没有什么比错误log最重要的了。Seattle是大周末丫的，所以log如果没有，那一次次的对比尝试就会完全搞死你，当然作为退而求其次，你需要思维导图来帮你debug。
