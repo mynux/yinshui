@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2018-09-06 21:23:26.503797
+---
+
+大数据量下的migration或是update时，最不能容忍的有两点：#A）由于低级错误或是流程步骤没有按照instruction所造成大量无效数据。#B）在数据导入快慢之间的权衡与考量。
+
+**1.** #BIDU 凤巢时300G+数据量的数据load，因为client导入时GBK和UTF-8编码没有考虑，直接导致花了半天时间导入的50G数据无效，不得不删除了重新导入，此为**A**。当时为了尽可能的快，同时开启了100个线程同时写入，直接导致线上DB的主从延迟。此为**B**。
+
+**2.** #AMZN 是从Oracle迁移到Postgres时因为Tasking和Table Mapping设置轻率，直接导致不得不用sql修改DB，table，column的name，此为**A**。本来已经一步开启fullloadandcdc的，却阴差阳错仅启用了fullload，然后CDC的步骤由于oracle的SCN默认5天存留的限制，导致了一些数据同步的障碍，此为**A**。
