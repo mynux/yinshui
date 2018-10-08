@@ -1,0 +1,14 @@
+---
+title: 
+layout: post
+date: 2018-10-08 04:36:02.370343
+---
+
+**人生的路很长，可关键处就那么几步。**回想起来也真是步步惊心，如果说当初选择北上是顺其自然，那这次选择东渡就似乎有点一意孤行了。唯一可以预知的是会相当艰难。但人生何尝不是一次次的享受，然后跳出SZ的过程呢。
+
+<audio controls>
+	<source src="{{site.cdnurl}}/assets/yinshui/audio/posts/seattle-or-not.m4a" type="audio/mpeg">
+		"Your browser does not support the audio element."
+</audio>
+
+大江歌罢掉头东，邃密群科济世穷。面壁十年图破壁，难酬蹈海亦英雄。
