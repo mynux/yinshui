@@ -1,0 +1,18 @@
+---
+title: 
+layout: post
+date: 2018-10-15 19:09:13.430705
+---
+
+**人有时候总是会陷入一种思维惰性或者说是记忆惰性，而且就算你每次Google一万遍都记不住，唯有经过自己的一次捣鼓才行。** 比如这次的折腾Sickle的VIP的经历
+
+刚开始以为是vip配置的问题，于是
+
+1. check VIP端口和Server端口映射是否对。
+2. check Server 日志发现没有更新怀疑Server没起来。
+3. check Catalina 日志发现有启动错误，说是Address already bind.
+4. 于是怀疑是不是该server端口已经被其他server给占用了。`netstat -lpan | grep '7443'`发现该端口有在listen，但不知道是属于哪个PID的；
+5. 根据提示再加个sudo来，`sudo netstat -lpan | grep '7443'` 发现果然在结果末尾有pid显示。
+6. 于是在通过`ps aux | grep 'pid'` 发现该7443端口并不是Sickle的Server而是该机器上的另外一台server。
+
+于是新技能get了。还有记得有个grep的命令。一直记不住使用正则表达式时改怎么办，于是终于有一天受不了了。记得了`grep -E`便是正则匹配。。
