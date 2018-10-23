@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2018-10-23 05:07:02.317588
+---
+
+擦，一直以为苹果把美国账户的注册权限给取消了。哪知道iTunes可以通过Paypal或者None直接注册美国AppleID，不需要美国手机号，只需要一个信用卡，我的Alexa终于可以开始折腾了。
+
+同时还发现竟然能够通过Skype获取到一个美国号码，然后通过call forwarding转发到自己的手机，真是意外的惊喜。
+
+![echodot]({{site.cdnurl}}/assets/yinshui/images/posts/echodot.JPG)
