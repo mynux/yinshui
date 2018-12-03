@@ -1,0 +1,9 @@
+---
+title: 
+layout: post
+date: 2018-11-22 03:16:45.065216
+---
+
+参与Global的黑五还是有收获的，熟悉了整个流程，大家坐在一个WarRoom里，各个组负责不同的services，每个service有primary和second oncall，有共同的tracking ticket，每隔半小时各个service owner签到。大家主要的事就是tracking dashboard，如果有产生的ticket迅速定位问题，找到系统瓶颈。而且往往这时候，最主要的任务就是观察各个order rate, open workflow, 以及hosts的availability，随时根据公式（Q4 preparation里的）来进行扩容。
+
+![warroom2018]({{site.cdnurl}}/assets/yinshui/images/posts/warroom2018.JPG)
