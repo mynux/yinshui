@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2019-01-10 01:37:51.708612
+---
+
+任何时候都不要让自己闲着，永远要尝试新鲜的事物，尤其在工作中。
+
+1. 之前做SEALS migration的时候要找PCES上已经成功处理的某个requester的transaction，还一直埋怨Paystation没有这样的工具，今天才发现，Discovery Tool(Kibana)就可以。
+2. 查PCES的Request和response，以前总是依据Timber log，后来才发现其实Jarvis有非常棒的功能，输入输出都可以查，还可以定位到某台机器，真是完美。
+3. 一直苦于查Timber log时找机器，后来发现其实有ssh2evn和ssh2hc都可以一键进入某个机器，瞬间幸福感提升不少。
