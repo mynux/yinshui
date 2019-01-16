@@ -1,0 +1,15 @@
+---
+title: 
+layout: post
+date: 2019-01-15 19:10:06.562942
+---
+
+遂发现，尝试的次数和你所获得的收益永远成正比。多交流，多试错，多见识，才能多长智。
+
+```java
+There is a case for remote-overrides: users have overridden apollo activate scripts and then run brazil ws env update for remote-overrides.
+
+In this case, users have to run activate after running remote override update command.
+
+It would be really powerful if after I run 'brazil ws env update' that environment also activated. This could be controlled by a flag (--activate).
+```
