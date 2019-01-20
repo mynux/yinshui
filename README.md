@@ -34,6 +34,7 @@ exit
 ### LOCAL
 
 ```shell
+chmod 400 ~/aws/w-pro15.pem
 ssh-add ~/aws/w-pro15.pem
 
 # useful command to display remote branch.
