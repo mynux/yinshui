@@ -1,0 +1,16 @@
+---
+title: 
+layout: post
+date: 2019-01-22 19:57:58.629475
+---
+
+这次这个incident的weblab remove来的值得，虽然负荆请罪了一个COE，但所获确实很多。对于shipment workflow的很多知识都有收获。
+
+1. 一个PFW的workflow如果slip进了shipment，往往很难从CS那边cancel，或者从fulfilllment端请求cancel往往也是吃力不讨好。而payments这边的处理也经常会形成stuck，以至于很多customer contact，从上到下各层的contact都在，但几乎一致是疲于奔命，没有切实有效的解决方案来处理此类事故。在PCESIL里加直接的hard decline有点过于武断，其实我们所需要的是在PCESIL端提供一个面向client的自动hard decline的措施，但不是hard decline这个payment operation或是execution，而是从client的角度，hard decline一个PFW或者shipment。就有点向一个operation层面的最基本的保障。且不需要我们自己来进入，如果client面对客户投诉，可以直接通过ninji team来做。
+
+2. 还有一类问题是关于PUMA的，不像PPS的PCR一般是translate好了直接放在PCDS的DB里，PUMA的paymentplan只是保存了一个PCR的版本号，如果任何时候需要，PC这边都是直接在线翻译的。之前一直纳闷PUMA版的PCR应该怎么backfill，现在才恍然大悟，原来只要直接backfill PaymentPlan就行，PaymentContractTranslator会自动拿到最新的版本。
+
+3. 对于SPOD的认知也有了些改变。在EPG算矩阵最终决定生成PE时，会附属上所有必要的SPOD的信息，这时候的PaymentInstrument的信息也会附在上面，而最终会走到算PE是否有效的问题，如今很多tt都是关于AmountRequested和AavailableBalance不一致，如果遇到这种情况，基本从两处分析，其一是requestedAmount计算是否有问题，比如在请求里的valueExchange的item是否是计算有问题，一些税，传入参数的计算等等；其二就是从consumable的amount，最常见的问题就是
+    1. SPOD ID 是否在两个PCR里改变了？
+    2. BusinessName, PayableID等是否改变？
+    3. 是否是PER里的一些rules导致了在PayStation里可以看见的，但其实就是没法consume？
