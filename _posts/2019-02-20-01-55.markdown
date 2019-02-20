@@ -1,0 +1,7 @@
+---
+title: 
+layout: post
+date: 2019-02-20 01:55:14.211500
+---
+
+一直很难找到一个有效的方法来应对PER log太大没法vim进去查找的问题，每次进去就ssh loss connection，今天忽然发现，直接根据ThreadID来grep重定向查找，不要太好。
