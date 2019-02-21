@@ -1,0 +1,34 @@
+---
+title: How Is Payments Involved During Ordering
+layout: post
+category: memories
+tags: []
+date: 2019-02-21 02:56:41.760907
+---
+
+BroadCast的收获还是很多的。纯knowledge上的尤其对于Payments上下游相关的Service/Team了解了不少。比如针对UOP（Unified Ordering Pipeline），通常是Retail订单：
+
+1. Process Checkout 之后进入的是PaymentPortal，用于进行PaymentOptions的选择，owner则是Payment Acceptance&Exp Team，其中的一个service call就是paymentplanAggregate，会call Wallet来获取可用的Payment option。
+2. 当place order之后，就会真正的由Ordering的PCE(CASE: Contract Aggregation & Signing Enginee)来进行Payment contract的validation和confirmation。
+3. confirmation之后，就会调用COW(Customer Ordering Workflow) 的PFW来进行最终的sign，sign完成之后就开始了真正的基本TRMS，TRMS通常会call walletservice来进行payment instrument检测，如果没有问题，接下来call Payments来收钱。当一个Adjust call来PCES之后，PCES根据BPAS（MAPS)的配置，决定是在Ordering level收钱还是在shipment level来收钱。比如对于UpfrontCharge的订单，BalanceTrackingEnabled flag可以决定在UpfrontCharge阶段收到的钱是否能用于接下来的属于同一个PaymentContract的PaymentTransaction，也决定了是否需要release call来自动refund。同样的Balance reusable flag则是针对一个PaymentOption已经被Initiate了，但是又被cancel之后，如果一个新的使用同一个PaymentOption的Transaction（通常是shipment level），是否还可以重用。被reused的钱，如果用不完，则是通常在被一段时间后自动release，或者在当前使用的transaction的finalize操作之后release。
+4. 如果PFW成功了，就是启一个NFS来通知shipment，收钱准备工作已经完成，可以准备shipment流程了。这时候shipment就会开始针对一个个订单来生成相应的shipment generation workflow。
+5. 同理，接下来是相应的shipment completion workflow。
+
+**值得注意的是PCES是基于PaymentContractRevision的。其是一个Purchase Level的，而以前的SEALS，甚至PaymentPlan其实都是针对一个个订单的，因此是Order Level的。这个在PCE里就可以看的很清楚。**
+
+针对Digital 订单，由于digital订单不需要shipment，且相对来说，digital的FE的portal、widget很多，因此后端的PaymentPlan，Payments都是相对比较简单的。
+
+1. 下单的界面也不是通过UOP，而是专门的DOX（Digital Ordering Experience)来实现的，按其同样使用了前端的Payment Portal的Payment Option selection。
+2. 同样的，下完单之后digital会调用到一个叫着Dice(Digital Contract Execution)的service来生成一个DigitalOrder的herd workflow，然后其从DOS拿相应的Payment entity，然后判断是否要走AggregationWorkflow，如果YES，则进行Ordering Aggregation，然后会选择PaymentProcessor为Portal（BranchOnPaymentProcessorForReloadPortalPlanFromDOSAfterOrderAggregation），然后其会通过portal来直接call PCES进行Auth和Settle（之前是Portal Call SEALS来进行的）
+3. 如果不走Aggregation workflow，则会选择PaymentProcessor为PCESIL，然后Call Adjust到PCES。
+
+**值得注意的是由于针对Digital Step3的branch，导致了一个怪异的现象就是有些AmazonEBooks订单的Payment是Initiate+Finalize而有些则是Adjust+Finalize。**
+
+
+当然还有
+
+1. 对于从RW的Grupa到Ordering这块哪些Service Involve了，Audit Trail 是很有用的。
+2. Grass其实是Ordering 提供的Operation Tools，真的很赞有么有？
+3. Tokenizatin其实是Wallet的，其目的就是在刚开始阶段从用于刚到PaymetOptionManagement界面里输入卡号之后就直接存入到Tokenization的DB里，然后从上游到下游交互的卡号全都是token，只有到Beach那边往Partner那边发送的时候，才是真正的卡号。绝对的保证了信息的安全。就像Beach端有SZ一样，这种Security的保证还是很重要的。
+4. Settle的一个别称是Capture。
+5. BPAS（MAPS）Payment Option的选择逻辑和Checkout界面的PaymentOption的关系。PaymentOption界面其实是Wallet的一个前端，其提供了PaymentMethod（EP，CC，DD等）和Instrument（具体的卡号等信息）。到PCES之后，这些被放在PaymentInstruction里面，然后call Wallet拿到具体的Issuer等细节信息，据此再call BPAS(MAPS)来获取具体的issuingBank来进行具体Processor的选择，MasterCard,Visa，Alipay，WeChat等等。
