@@ -1,0 +1,25 @@
+---
+title: 工具即生产力
+layout: post
+category: memories
+tags: []
+date: 2019-11-25 02:56:41.760907
+---
+
+
+最近总结的几个非常简单直白的例子，再一次印证了所谓的工具即生产力。但也再一次印证了科学和工程的区别和联系。
+	
+	1. Coral Metrics
+	一般Coral原生的metrics比较隐藏的深，而且基本上有几个概念需要掌握，
+	Service level， method name，具体的metircs，而且很多时候，当你发现选择了多个metrics，放在一起显示的时候就会发现legend几乎把所有的显示内容区都给占据了。
+		a. 所以一般需在右侧的lengend的show选项上去掉打钩。
+		b. 或者显示bar graph来显示；
+		c. 或者更好的还有metrics统计，显示在一段时间内的最大最小值；
+		d. 通常的metrics，可以在monitor上直接搜索，不管是service，method还是metrics name，
+		e. 尤其是ConditonalCheckFailedException的这个还是让我印象比较深的，且很多时候更细节的过滤需要才会发现root cause。
+
+	2. CloudWatch Metrics。
+	有句话怎么说的来着，了解metrics才能帮助你了解更多的东西，每个metrics的含义其实都是被精心设计出来的，很多时候当你觉得cloudwatch metrics看起来很怪异的时候，一定是你自己的理解有问题，有些东西没有理解清楚就会觉得不合理(就跟以前高中学校一样的感觉），所以花时间和精力后才会发现所谓存在即是合理。
+
+	3. Herd UI Tools
+	学会用Herd的context过滤，by operation 过滤来找herd attribute对于集合特定的workflow error至关重要。且很多时候用herd document中本身的regex来寻找order id也是非常方便。包括根据herd tag来进行resource allocation，不同的bucket分配不同的资源也显得非常有效果。最近也发现PSXT和Beach已经不用timber log了，所有的都只用Jarvis console看output input，等等，明显效率就会得到非常大的提升。
