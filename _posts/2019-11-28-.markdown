@@ -1,0 +1,9 @@
+---
+layout: post
+date: 2019-11-28 21:58:48
+---
+
+之前为了让jekyll plugin在创建post时默认自动生成一个空的只有日期的title，从而支持没有post title的微博，渐渐的后来才发现，原来jekyll原生已经支持了。反而在过程中发现了些之前一直被忽视的实用技能。
+
+1. Spotlight Search. 之前一直傻傻的每次都把dashboard给唤出来，再输入APP来唤醒。竟然丫的alt+space的快捷方式完全可以搞定。
+2. 每次通过模板导入时，之前的日期都是需要自己修改，丫的今天才发现原来jekyll本省就可以`Insert current datetime`的快捷方式。
