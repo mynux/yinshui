@@ -1,0 +1,17 @@
+---
+title: 
+layout: post
+date: 2019-12-01 13:54:02
+---
+
+
+突然发现这么长时间的linux，最有用的linux命令竟然是alias。而且之前一直各种繁琐的命令切换，其实一个一直的alias就完全搞定。真是喜出望外了。
+
+```shell
+go-yinshui
+open-yinshui
+go-cemao
+open-cemao
+```
+
+越来越觉得好好学习，天天向上简直是微言大义啊！
