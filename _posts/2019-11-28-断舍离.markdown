@@ -1,5 +1,7 @@
 ---
 title: 断舍离
+category: memories
+tags: []
 layout: post
 date: 2019-11-28 02:56:41.760907
 ---
