@@ -1,0 +1,12 @@
+---
+title: 
+layout: post
+date: 2019-12-03 17:50:42
+---
+
+BlackFriday没有啥大问题，总体还算平稳。也是第二次正式的参与Seattle这边的War Room。总结起来，有几点值得思考：
+1. Host的scaling基本看CPU利用率，正常60以上就考虑是否要scaling了，而且基本上每次前期的Readiness都是不准确的，多数情况是up scaling
+2. EU的UFA的行为，或者说UFC的改变直接导致PER的压力变大，PER本身的性能瓶颈导致其目前主要问题集中在了NFS。PCESSupportForRetry的Herd Resource 也成了非常重要的一环，分不同的bucket，对最终的scaling非常有好处。同时PER的ON-demand配置是的table level的scaling变得不必要了。而主要关注的account level的issue。
+3. 以前的PCESIl的压力，现在通过COW Herd的throttle配置，转嫁到了Herd这块的throttle了，所以整体而言PCES 变得平稳了，而主要的两个问题集中在了PFW和NFS
+4. 最可怕的high transaction version的问题没有发生，是最值得庆幸的事。同时也没有外部dependency service挂了，所以正常的standin service其实没有用的上。
+5. 先take ownership，然后在说。
