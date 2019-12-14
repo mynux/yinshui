@@ -1,0 +1,18 @@
+---
+title: 思维定势太可怕
+layout: post
+category: memories
+tags: []
+date: 2019-12-14 13:34:34
+---
+
+早晨遇到一个tt，check monitor发现是hanldeMessage的ResponoseCode 500的错误，进而去service log里搜索，因为每分钟只有5个左右，random选择一个搜索不到。于是想办法aggregation所有的responseCode500的错误，同时因为该错误还发生在handleRequestExecutionRequest的operation，**就理所当然的按照handleRequestExecution的错误行数来** `grep -A #lineNum `来找，结果怎么找都找不到，一个小时之后才丫的发现，不是metrics有问题，而是丫的lineNum设定的太小了，根本不够。
+
+你看，不经意之中，思维就做了这样一个conversion。
+
+1. Error 在handleMessage和handleExecutionRequest.
+2. Grep ResponseCode:500 发现的全是hanldeExcutionRequest的错误，而我想找handleMessage的错误
+3. 于是计算了下hanldeExecutionRequest的operation和错误的pattern，应用到handleMessage的pattern。
+
+这就是活生生的刻舟求剑啊！古人的智慧不服不行啊。
+
