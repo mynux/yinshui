@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date:  2019-12-13 20:23:14
+---
+
+>历史一次次的证明，有些悲剧如果忘记，历史就会再次上演。
+
+对于个人也是这样的，庆幸的是因为对之前的经历仍然历历不忘，所以发现这次遇到类似的事时，改变在一点点的发生。而且要更加积极更加主动的让改变发生。就像之前一直关注language, code之类的东西，而越来越关注系统，架构，组织的层面。今天的All Hands Ashish说的很有意义，系统的decouple是自然而言发生的，当一个系统遇到瓶颈，系统迭代速度开始变慢，maintance 开始变成了一种负担，那我们就自然而言的引入away team model，当away team的代码对service owner的maintance造成很大困难，当away team的code在service owner的代码库中比例变得越来越大时，就是该考虑decouple的时候了。decouple不是refactor系统，不是提高代码质量，而是某种意义上的水平扩展。用更多的resource和management上的投入来提高系统针对business的扩展速度，来逐步提高系统的可用性。当decouple的越来越多，decouple本身的问题就会突出，尾大不掉的时候，就是时候进行reorg了。
+
+突然发现以前想不通的事情，现在发现有其更深层的逻辑存在。
