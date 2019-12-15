@@ -1,7 +1,6 @@
 ---
 title: 思维定势太可怕
 layout: post
-category: memories
 tags: []
 date: 2019-12-14 13:34:34
 ---
