@@ -38,6 +38,7 @@ html, body {
 body {
   font: 16px "system-ui", -apple-system, Helvetica, Arial, sans-serif;
   color: #666;
+  background-color: #eff3fa;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
