@@ -1,0 +1,18 @@
+---
+title: design discussion和工作效率低下的问题
+layout: post
+date: 2019-12-22 20:30:28
+---
+
+**参与design 讨论时有个明显的问题是经常抓不住论点。之前跟arko，edward等聊天都是有这种感觉。也许我就是那种经常想要表达自己观点，却完全不在乎别人说什么的人。这个需要改。**
+
+同时也发现design的讨论对系统上下游本身的理解需要足够的深入，而且经常参与这种讨论也是有利于对系统的深入理解。看来下次应该多参与这种design的会。最近对UFA的会，F3的会，Settle For Less的会都表明了这种参与其实很有收获，而且同时发现，这种会的副作用就是需要更多的时间去完成手头边上的工作。越发的觉得真正锻炼人的地方就是这种busy情况下的效率。明显现在发现自己的效率很低。
+
+一周过去了，EPG的另一个CR还是在pending状态。然后，欠xueling一个accounting的问题；欠jingwei一个processor metrics问题。
+
+
+**PS:** 之前每天早上星巴克和一块butter crosient 还是有点浪费，而且的确星巴克的咖啡没有whole foods买的coffee粉然后冲好喝。于是有一次尝试了如何在超市买咖啡豆，研磨，然后用这个french press自己冲，自己加牛奶和糖。体验确实不错，mark一下。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/french-press-1.png)  
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/french-press-coffee.png)  
