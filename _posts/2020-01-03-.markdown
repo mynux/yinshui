@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2020-01-03 20:30:05
+---
+
+记得开始disbursement组成立的时候，xiaopeng问过同样的问题，当时毅然决然的选择了留守，然后xuegang就去了disbursement。然后当refund team成立的时候，一样的问题，一样的答案。如今charge组的问题再次摆在眼前，一样的回答。理性上来看，一个新的team成立后，去这个team深耕是再好不过的。所以，人无远虑必有近忧。
+
+希望回头来看看时不会感到后悔。
+
+***PS: Reply&Response和Jarvis的enable对CPU还是有很大的影响的。那个Kiness producer就是例证。***
