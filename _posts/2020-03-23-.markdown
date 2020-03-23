@@ -1,0 +1,7 @@
+---
+title: 
+layout: post
+date: 2020-03-23 04:20:43
+---
+
+想想也逗+1。因为想打印一个transaction的ion结构，但是log中显示的有很多换行造成的空白字符，直接复制出来走到sublime里，以前都是直接找copy+replace的按钮。今天才发现，原来直接find之后，选择find+all，然后可以用跟VIM一样的Visible操作，把所有的空白都删了，一次性的。当然还有一个去处空格的方式是直接把那一行的文件copy到本地，直接用sublime打开就行了。find+all然后整体操作的特性还是第一次无意中学到。好玩。。。
