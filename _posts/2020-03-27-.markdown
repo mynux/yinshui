@@ -1,0 +1,9 @@
+---
+title: 
+layout: post
+date: 2020-03-26 09:30:36
+---
+
+实际project的训练和consulting是打怪升级最快的方式。不得不承认，游戏中模拟和理解现实竟然如此有用。比如consulting和cr这种就不自觉的了解了更多的东西。比如CASE有过滤功能的purchase document 调用。比如auditor workflow的review，比如beach的Auth Settle 的credit card在PCES中处理的方式（Ptech）等等。
+
+继续加油凿吧！
