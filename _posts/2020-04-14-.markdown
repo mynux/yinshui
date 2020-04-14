@@ -1,0 +1,8 @@
+---
+title: 
+layout: post
+date: 2020-04-14 10:39:00
+---
+
+
+ConcurrentHashMap原来1.7和1.8采用了不同的线程安全实现机制。但是只是限于修改操作，如put. Get用的都是voilate变量来保证任何线程访问的数据都是最近更新。这个之前还真不知道，😓。后来渐渐深入的了解了下ConcurrentHashmap，发现put操作在1.8之前用的是分段（segment）在加段内的桶，而锁的粒度是基于桶level的。到了1.8之后，则直接改变了这种臃肿设计，换成了简单的synchronized和CAS(CommpareAndSwap)原子操作。然后关于LRU Cache数据结构的实现也大致有些了解。review code 还真是收获不小。
