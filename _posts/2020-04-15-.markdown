@@ -1,0 +1,7 @@
+---
+title: 
+layout: post
+date: 2020-04-15 13:19:07
+---
+
+这种iterator般的code review过程还真的能学到东西。之前一直以为resourceTable也是某种resourceContext类似的实现，今天才知道原来是Aspect based的resource获取。也包括resourceBag具体的作用和primary resource的目的，这些之前一直没有实际用过，今天这个update PCR的过程着实收获不少。同时，external service call的基本metrics, jarvis设置也是很重要的。诶，再次证明，code review的过程是学习东西很好的过程。如此想来，发现自己对PC还真是**轻薄为文哂未休**啊。
