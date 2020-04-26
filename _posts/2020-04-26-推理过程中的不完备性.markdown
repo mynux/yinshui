@@ -1,0 +1,34 @@
+---
+title: 推理过程中的不完备性
+layout: post
+date: 2020-04-26 05:01:23
+---
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/incomplete-thinking-bug.jpg)  
+
+有两件事更加印证了之前的结论。真正知识的增长是可以感知的，尤其是在code review和帮助别人解答疑惑的过程中。近期的operation level加一个flag的需求，才明白了原来operation level的model type和PCES内部的ion的model是两回事，而且前者是external的，后者是internal的。我擦，之前一直把两者给混淆了。
+
+然后，也发现了，现实中有些解决知识的方式可以不限于知识的积累，而是通过一个思维的完备性推理也可以解决。而这类技巧更加难以掌握，但更加的有利于举一反三，触类旁通。如上图展现的是一个问题出现以后的思维过程。
+
+问题： PFW workflow急速增长，看到的exception是invalid execution。
+
+**处理过程：**
+
+1. 这种问题最直接的原因是某个processor的change导致的，看了下问题是否是针对某个specific的processor，是，那大概率是某个processor description的change，如果不是，那很可能是PCES的问题，或者是RCX的问题。
+2. 自己打不开page，让另外一个人确认下是否是单一的processor（得到的结果是，yes）。
+3. check相应的processor descriptor的change，最近没有change。
+4. check最近的pces deployment，最近没有相应的deployment。
+5. 那很可能是某个RCX的deployment导致的问题。于是involve RCX看看是否有问题，
+6. check相应的processor side的success rate是否有改变，发现根本没有改变，但这个proof没有引起足够的重视和基于此的推理。check相应的PCES的Adjust的rate好像也没有明显的减少。这个proof也没有引起足够的重视。
+7. 浪费了很长时间来等RCX side来confirm结果，自己check发现有FR region RCX的change，但否来被RCX 否定了，as check with RCX owner发现最近没有India region的change。
+8. 又觉得可能是RCX端的某个weblab dialup，让RCX找某一个specific的log看问题。
+9. 到这一步发现log没法check，于是就卡在这进行不下去了。
+
+上述的分析过程其实每一个步骤都有不止一个分叉，且根据当下的事实不一定能推出所谓的下一步。比如，第一步，单一processor的问题再后来被否定了，就觉得应该更加怀疑RCX的change，但一个显著的点，默认假设了最原始的问题：如果发现invalid 
+execution变多，是否应该设想一下正常情况下这种case我们应该怎么处理。回头来想了想，发现了一个很大的knowledge gap，就是之前一直默认所有的RCX的call都是最终可以被唤起的，即TransientException的exception是暂时的，而忘了目前PCESIL
+的处理方式就是swallow。从这个角度看，这个knowledge gap直接导致往下推论过程的错误。另外的角度，总结了一些有用的思维tips:   
+
+**经历了两天了，stuck workflow其实只有三千多，而且增长的很缓慢，其实能够反映的问题是并不是大规模的deployment造成的失败。**   
+**如果RCX确认了最近没有change，那么log也没法看，应该试图从另外一个角度看问题，而不是懒惰的等着那边给结果。这反映了在处理问题时的惰性，或者说积极性不够。**   
+**如果思维往下溯，发现还是解决不了，不妨重新来过，从问题本身再着手，深挖，往往会有奇效。尤其在问题有多个差头，错综复杂时，如何通过事实和证据一步步排除往下走，这个能力还是很牛逼的。**   
+
