@@ -1,0 +1,41 @@
+---
+title: 服务器过载导致雪崩use case复盘
+layout: post
+category: memories
+tags: [work]
+date: 2020-05-16 12:02:31
+---
+
+基本事件重现如下： 
+
+1. 从11号开始逐渐收到client关于服务器频繁spill over的报告；
+2. 怀疑是某个时间段的deployment造成的，rollback发现没有效果。
+3. 接着比较prod和devo，试图增加http max connection和max connection。发现还是没有效果。【**】
+4. 试图增加机器，额外增加6台机器，短时间有效果，然后发现任然有spill over，
+5. 查看log，根据以往large transaction版本的建议，发现有large transaction可能导致loopy，找到了相应的large transaction,然后stop相应的request，spill over当时消失了。但是过了几个小时发现上游另外一个service也有了spill over
+6. 于是增加了上游service的host和connection，然后上游的spill over消失了，但是下游的这个service又开始有spill over了。（现在想想之前是由于上游帮着把下游的一部分流量的担着了）
+7. 发现下游机器的host disk达到百分之百，查看了下文件，发现是由于jvm heap out of memory。
+8. 开始以为是host configuration的问题，试着比较其他env的configuration，然后开始怀疑，试错的改，发现并没有什么作用。
+9. 怀疑就是client request过大导致的，然后试图减少maxConnection，最后不知啥原因没生效，也就没有继续改。【**】
+10. 仍然试图找client的requester，但是devo没有track，一直没找到。然后就卡壳了。
+11. 后来team改了service内部的throttling configuration，来内部throttling的来限制CPU利用率，结果发现有用，而且整个屯库量一下子上去了。
+
+整个修改分析的过程其实每一步都充满疑点，甚至不能推出下一步的决定，更像是在无尽的试错。回过头来看看至少有两个正推的线索：
+
+1. 如果发生spillover了，怎么样决定是service内部的问题还是外部client的request过大，因为这两种情况都可能导致处理request的能力下降，从而引发spillover。所以首先**第一步是check host level的CPU和内存利用率，check client request的增加情况。**然后导致两个方向：  
+
+  a. client或者内部request增加导致的loopy，而根据以往的经验，这种loopy往往是由于transaction version过大导致的。然后我们也fix了这种loopy的transaction，结果发现spillover还是存在，且CPU和内存利用率还是居高不下。
+
+  b. 接着就要考虑下是不是真的就是client request的增加导致的。但是这里有一个知识盲区便是，**你并不知道正常的TPS是多少，正常TPS是怎么算的，甚至是max TPS怎么算的你也不知道。所以更不知道随着TPS增加，CPU和内存会直接消耗殆尽导致spillover。**
+
+2. 缺少service latency的情况，因为往往最大TPS的判断一个最直接的因素就是是否有service latency的逐步增加。因为越是增加了，就越会导致雪崩效应的出现。然后应该有两种策略，一种是直接vip的spill over，但是前提是知道host正常能处理多少，然后设置合适的maxConnection，结果发现自己并不知道。虽然减少了connection，但是host依然CPU利用率很高。
+
+分析整个过程，有了很多经验教训：
+
+	1. 看一个service的throughout，不仅要看其机器配置，更重要的是在devo和prod环境下的dependency的配置也不同，所以直接照搬prod的configuration，就会直接导致反方向的结果。
+	2. fallback的熔断机制不仅要在client level的resource 来配置，更多的时候，service本身也要有throttling的能力才行，不然会直接导致整个host处理的latency和dependency大幅度下降。最终直接导致CPU100%，然后就是out of memory的问题。同时在有很多client的时候，如果client的requestmetric不太清楚，service内部整体的throttling就显得非常重要了。这次的这个问题再一次印证了这一点。
+	3. Vip level的max connection的配置也是一个非常重要的，如果配置的低，会发现频繁spillover，此时host的CPU和momory不会很高。如果配置的很大，且跟httpNumber不匹配，会直接造成一边spill over在减少，但是max Connection在增加，CPU和momory也在增加，然后就直接导致了client的httpTimeoutException，这时候就需要根据情况分析：
+		a. 如果CPU和momory利用率不高，但是httpThreadNumber配置的过小，maxConnection配置的过大，那么就需要增加httpNumber来增加吞吐量。
+		b. 如果CPU和Memory都很高，甚至到了100%,就需要减少httpThreadNumber和maxConnection的配置，来缓解CPU的吞吐量，来使host到达一种正常的水平。从而才能逐渐从死锁中恢复出来。
+	4. 思考一个问题时，如果有多重错综复杂的线索时，如何才能准确的排除问题，定位真正的root cause，其实需要某种理性的认知和排除过程，分析一个问题的cause，找到相应的证据来进行排除，然后寻找另一个cause，逐步来归纳。最怕的就是一个cause分析了一半，又去分析另外一个，然后每个都是模棱两可的，那么最后思绪就完全乱了，就没法work了。
+	5. Gizmo Throtting关于host level的TPS和CPU 利用率的关系很重要,尤其是对于配置thread 和maxConnection的关系，之前也是一种知识的缺失。
