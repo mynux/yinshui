@@ -8,6 +8,6 @@ date: 2020-06-24 12:15:54
 
 然后昨天遇到的事一样是AWS的DynamoDB的auto scaling直接挂了，然后AWS直接把system level的capacity scaling到了最小。为什么scaling挂了，是CW的metrics挂了，直接导致scaling出错了。然后DDB 的W/R Capacity就非常的小，所有访问DDB的request都被自动throttle了。metrics显示读写都在throttle，然后一个个请求在不断地重试，直接导致vip level的client connections也被挤爆了。所有的upstream的workflows都在堆积。
 
-然后一个特别逗的现象是，第一眼看以为是client的request多大，然后发现ordering并没有增加，但是所有workflow都在堆积。
+然后一个特别逗的现象是，第一眼看以为是client的request多大，然后发现ordering并没有增加，但是所有workflow都在堆积。第一眼以为是workflow出了问题。这个现象的确是扑朔迷离。最后根据workflow的具体sample才发现是service本身DDB的问题。
 
 
