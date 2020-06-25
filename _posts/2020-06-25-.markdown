@@ -1,0 +1,10 @@
+---
+title: 
+layout: post
+date: 2020-06-25 07:03:54
+---
+
+
+**很多时候，wierd的use cases，或者连debug都找不出来的时候往往是因为最基础的assumption是错的。甚至是最基础的工具。**
+
+*一个很好的Debug Notes:* 有多个test cases，多个一起run的时候就失败了。每一个单独run就是成功的。这通常是orchestrator除了问题。当然这个orchestrator可以是BeforeTest时的初始化没做正确，也可能是build工具本身，比如有些cache没有clean，所以，每次遇到这种怪异的问题时第一件事是做个clean。这种事情已经发生了不止一次了。
