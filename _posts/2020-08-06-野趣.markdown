@@ -1,0 +1,15 @@
+---
+title: 野趣
+layout: post
+category: memories
+tags: [life]
+date: 2020-08-05 08:47:02
+---
+
+>菜花园圃槿花离，麦满前坡水满池。
+野花横竿拦鸭过，牧儿携笛倚牛吹。
+
+
+一直为疫情居家的乏味所累，终寻得半日野趣，实乃乐事。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/yequ.jpg)  
