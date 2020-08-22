@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2020-08-22 01:57:24
+---
+
+
+还真是有些物品能惊艳你的生活，比如这个眼罩，睡眠明显变沉了许多。比如这个喝茶的习惯，最近新发现了许多。
+
+
+PS: 昨晚一直被DynamoDB的ConditionalCheckFailedException坑了好久，最后才发现是在有mapper时，DynamoDBVersionAttribute的锅。
