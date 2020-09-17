@@ -1,0 +1,12 @@
+---
+title: 
+layout: post
+date: 2020-09-16 22:14:05
+---
+
+DynamoDB ResourceNotFoundException indicate the table does not exist.
+
+1. The table name is incorrect.
+2. The DynamoDB client select the wrong region.
+
+再次证明从问题本身出发往往有很好的效果。
