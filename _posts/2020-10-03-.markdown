@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2020-10-03 02:09:03
+---
+
+理解一个概念的时候，第一要点是明白其描述的对象到底是什么？比如当我们谈eventual consistency（最终一致性）的时候，我们说的是**在一份数据有多个复制的前提下，如果某一个或者多个复制被更新，那么，以一种怎么样的方式来保证之后的数据还是一致的**，就有了强一致性和最终的区分。
+
+再比如，我们谈DB的所谓的脏读，不可重复读，或者是幻读的时候，**指的是在某个DB的isolation级别下，两个或者多个DB事务之间的影响。**    针对一个事务A，如果其运行isolation的级别是read uncommit的，那么其有可能读到的是事务B并没有最终commit的数据，如果B在commit的时候rollback了，那么最终这个就是脏读。同样，如果isolation的事务级别设置在read commited，其就相当于加了一层限制，如果B的transaction还没有最终commit，就不应该让我读到。这样的限制也一样还有问题，比如如果A事务开始的时候，读了一次B，然后B针对同样的数据做了update且commit了，A这时候在读的就是新的指，那说明在整个A的事务中，读的同一个数据是不可重复的，这时候我可以继续加限制，把isolation的级别设置则repeatable read, 就相当于让DB保证，如果我刚开始读了数据，然后中间即使B的transaction commit了，一样不要让我读到更新的数据，这样就能保证我在transaction之中读到的数据始终是一致的。只有当我当前的transaction已经commit了，下次在读才会发现B其实是已经更新了。这样其实就相当于针对某个A事务需要update的数据，B的transaction需要限制更新。相当于是针对某个row加锁。但是一样的问题是并没有对所有B的transaction的事务加锁，这时候可能B可以针对其他的数据做delete或者insert等操作，那么在A事务中query到的结果集其实可能多或者少。这就是所谓的幻读。然后如果我们继续提高DB的isolation级别，即serialize，顺序处理。那么在A处理transaction的时候，其他所有针对A transaction操作的数据先不要处理，顺序来。
+
+基本的RDMS支持四种isolation级别，dynamo DB默认的事务处理库支持前三种，不支持serialize。
