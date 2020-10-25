@@ -1,0 +1,7 @@
+---
+title: 
+layout: post
+date: 2020-10-23 06:47:03
+---
+
+再一次被打脸。以为自己随便改改便可以fix的一个简单的问题，然后就直接checkin，推上去了，也没看，直到有人report好几个sev2，才发现有这么大的impact，各种lose trust，然后还要花两天时间来backfill，这个事整的想抽自己几个大嘴巴子。仔细反思了，其反映了几个方便的问题，最初的integration test的cover写的太烂了，正常如果产生了real的Finalize，test就应该挂了，但其实根本没有相应的validation。再一次印证了在实际代码中，有90%以上的bug都是可以通过完备的test来避免的，偷懒最后只会让你花更多的时间在这上面。
