@@ -1,0 +1,11 @@
+---
+title: 
+layout: post
+date: 2020-11-29 08:03:06
+---
+
+JVM把类加载的权限给应用程序，才让现在很多的动态技术成为可能。这也是Java作为动态语言的最基本特征。而这一切的基础都应该从类加载器的基本层级结构开始。parent delegation的层级结构保证了基础对象加载的一致性与安全性特征。但是打破这种层级delegation的特征就直接导致了常用的动态加载技术的出现。比如JNDI的SPI，JDBC的Driver发现等，都是通过在bootstrap classloader加载基本JNDI管理类，然后把具体实现的加载交给应用层的classloader，如ThreadContextClassLoader。再比如OSGI的热部署，其就是通过自己实现了一套模块化的类加载器，每次替换的时候连同加载器一起替换。
+
+这也解答了困惑我多年的BeachService为什么能够支持beach processor这种动态部署，本质就是动态加载。
+
+--《深入理解Java虚拟机》
