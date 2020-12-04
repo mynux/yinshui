@@ -1,0 +1,9 @@
+---
+title: 柴米油盐不止
+layout: post
+date: 2020-12-04 01:30:39
+---
+
+每个月至少要吵一次。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/seattle-slu-raining-fall-1.JPG)  
