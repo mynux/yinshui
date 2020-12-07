@@ -1,0 +1,13 @@
+---
+title: 
+layout: post
+date: 2020-12-07 12:18:14
+---
+
+IntelliJ 基于正则的代码搜索功能真是解决了困扰我很久的问题，真香。
+
+```
+cmd + shift + find
+
+group with identifier .* is known
+```
