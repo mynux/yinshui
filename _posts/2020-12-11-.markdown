@@ -1,0 +1,24 @@
+---
+title: 
+layout: post
+date: 2020-12-11 03:46:31
+---
+
+又一个印证第一性原理很好的例子。
+<hr>
+
+1. DynamoDB的某个table throttle
+2. 是否是有client traffic增加
+3. 去service log看是哪个client在throttle，去monitorportal看throttle最大的是哪个request
+4. 发现是initiate，再去看哪个client
+5. 怀疑是sil的initiate或者cancel，但是上游流量没有增加，这个throttle可能来自internal retry或者batch rerun
+6. 试图增加capacity，一段时间后又throttle，但是traffic仍然没有增加
+7. 怀疑某种single point failure。
+8. Check throttle的类别，large traffic或者hot partition，如果能有contributor insider就好了
+9. check service log，看下是否是特定的某种throttle。
+
+也就是说table level有个capacity limit，如果有hot partition，直接导致整个table被throttle，别的client如果一直访问就会被一样的throttle，抛出exception，这时候所有client都会不断的retry，就会有potential retry storm发生。而真正的capacity throttle的原因可以通过contributor insight来解决，直接能够看出哪些partition在throttle。
+
+hot partition的case第一次见，不错。
+
+[https://aws.amazon.com/premiumsupport/knowledge-center/dynamodb-table-throttled/](https://aws.amazon.com/premiumsupport/knowledge-center/dynamodb-table-throttled/)
