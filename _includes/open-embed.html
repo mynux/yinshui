@@ -1,16 +1,16 @@
 <style>
 .videoWrapper {
-	position: relative;
-	padding-bottom: 56.333%;
-	height: 0;
+    position: relative;
+    padding-bottom: 56.333%;
+    height: 0;
     background: black;
 }
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: 0;
 }    
 </style>
@@ -52,6 +52,7 @@ function video_embed() {
                 var theInnerHTML = '<div class="videoWrapper"><iframe width="720" height="420" src="https://www.youtube.com/embed/' + youtube_id + '?rel=0&showinfo=0';
                 if(autoplay==1) theInnerHTML += '&autoplay=1';
                 if(loop==1) theInnerHTML += '&loop=1&playlist='+youtube_id+'&version=3';
+                if(p[i].innerHTML.indexOf('start=') !== -1) theInnerHTML += '&start='+p[i].innerHTML.substring(p[i].innerHTML.indexOf('start=')+6);
                 theInnerHTML += '" frameborder="0" allowfullscreen></iframe></div>';
                 p[i].innerHTML = theInnerHTML;
             }

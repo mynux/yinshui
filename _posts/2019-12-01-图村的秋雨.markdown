@@ -6,6 +6,8 @@ tags: []
 date: 2019-12-01 13:16:55
 ---
 
+<audio src="/assets/yinshui/audio/posts/tingting-na-leng-yu.mp3" controls preload></audio>
+
 雨的审美意象在古代的诗词典赋中一直存在，加之从小的耳闻目染，对雨的想象总是美好的。不管是湖光山色迷人眼的春夏之雨，还是僧庐屋檐到天明的凄切之雨。只因为一切置身事外。因为一下雨，仿佛这个世界只有你自己，真真切切的都是大自然的声音，什么喧嚣吵杂，什么烦劳忧愁，是雨让着时间突然静止了。
 
 华盛顿州别称Ever Green State，而西雅图则一直被称为雨城。美国最西北端的城市，往北开车两小时便是温哥华，往南两小时便是波特兰。西雅图的雨是一片一片的，乌云飘散到哪，雨水就在哪洒落。春夏之雨清新爽朗，即使还下着雨，天空也多是清澈明亮的，而秋冬之雨则是朦胧弥散，是成片成片的乌云聚集在一块，云气氤氲，雨气迷离，但不大，如青丝般缓缓飘落。以至于图村的人基本不用雨具，径自在雨中漫步。
@@ -16,6 +18,7 @@ date: 2019-12-01 13:16:55
 ![]({{site.cdnurl}}/assets/yinshui/images/posts/seattle-slu-raining-fall-2.JPG)  
 ![]({{site.cdnurl}}/assets/yinshui/images/posts/seattle-slu-raining-fall-3.JPG)  
 ![]({{site.cdnurl}}/assets/yinshui/images/posts/seattle-slu-raining-fall-4.JPG)  
+
 
 人是社会性动物，男人和女人是两个社会。
 
