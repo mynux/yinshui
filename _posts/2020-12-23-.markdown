@@ -1,0 +1,9 @@
+---
+title: 
+layout: post
+date: 2020-12-23 09:36:26
+---
+
+当你面对一个新的问题感觉无从下手的时候，有些high level的思维方式，思考方式就会对你有价值。当你在一个公司里，做high level的design的时候，一些leadership层面的基本思想就会帮助你。
+
+比如前段时间学到的，two way doors关于如何make decision。Working backwards就关于如何从customer的角度工作，相应的衍生，如model-first等等。然后渐渐开始明白为啥很多project，wiki最初的时候都会写一些tenets，以前觉得无关紧要，后来才发现，这些才是最high level的标准，可以作为argue时一个非常重要的论据。
