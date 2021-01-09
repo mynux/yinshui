@@ -1,0 +1,15 @@
+---
+title: 
+layout: post
+date: 2021-01-09 07:20:29
+---
+
+又学到一个新的工具，data grip，管理各种DB，redshift连接不要太high。
+
+---
+
+发现另一个致命缺点。任何会议总是以一种旁观者的心态自诩。即使本来在team的大好形势，渐渐的自己让自己变成了透明人，边缘人。你这是在用自己的职业生涯打酱油。很多好的机会没有抓住。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/seattle-slu-raining-fall-1.JPG)  
+
+<audio src="/assets/yinshui/audio/posts/tingting-na-leng-yu.mp3" controls preload></audio>
