@@ -1,0 +1,8 @@
+---
+title: 
+layout: post
+date: 2021-03-03 05:05:49
+---
+
+之前看到的是很多问题到了高层，往往这些leader提出的问题很尖锐，角度也很苛刻。但是最后拥有拍板的权利。权利本是就是理由。渐渐的，发现，其实越是高层，说服别人的理由也是越让人信服的。比如这次这个design discussion，最后的一个solid的点就是，相对于latency，我们更关心data model简单，service的connection少，直觉且最简单。而且，回到问题本身，latency只是我们要simplify的其中一个理由。很重要，但是我们可以从其他方便来解决latency的问题。
+
