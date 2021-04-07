@@ -1,0 +1,9 @@
+---
+title: 
+layout: post
+date: 2021-04-06 09:52:40
+---
+
+这两个feedback非常重要。
+1）回SIM的时候，提供approach的时候，需要提供相应的recommendation。如果不是long term solution的时候，就要显式的说，要尽快close，减少confusing。
+2）communication的时候，不要说**you know**
