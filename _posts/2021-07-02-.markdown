@@ -1,0 +1,14 @@
+---
+layout: post
+title: ""
+date: "2021-07-02 22:04:48 -0700"
+---
+
+今天刚好面试一个candidate时提到，再一次看[Martin 2000年的doc](https://web.archive.org/web/20150906155800/http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf)，写的真是太好了。很多总结的问题，竟然20年后现在还是如此真实，如此贴切。甚至在想，这20年software到底有没有进步。
+其实design pattern也非一蹴而就的。原先是从这些最基础的东西思考，总结，然后渐渐往low level探索，总结出一些语言级别的design pattern，就像是一种给程序员自己使用的交流语言。
+
+**S**: Single Responsibility Principles
+**O**: Open-Closed Principles
+**L**: Liskov Substitution Principles
+**I**: Interface Segregation Principles
+**D**: Dependency Inverse  
