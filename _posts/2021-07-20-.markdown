@@ -1,0 +1,8 @@
+---
+layout: post
+title: ""
+date: "2021-07-20 23:11:09 -0700"
+---
+
+对所谓的sdl model和internal Java model再次看了之后，才明白所谓的serialize的数据结构和in-memory的数据结构的不同。
+跟arko的聊天总能学到一些新的东西，很多问题他总能从底层技术细节出发，找到问题的突破口，这种思维太值得学习了。
