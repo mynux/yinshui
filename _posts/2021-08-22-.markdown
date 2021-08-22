@@ -1,0 +1,9 @@
+---
+layout: post
+title: ""
+date: "2021-08-22 14:16:05 -0700"
+---
+
+从petco整回一条泰国斗鱼(Betta)，灰褐色的头和尾，金蓝色的身体。小小的，但是挺有精神。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/naive.jpeg)
