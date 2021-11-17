@@ -1,0 +1,7 @@
+---
+layout: post
+title: ""
+date: "2021-11-16 13:51:30 -0800"
+---
+
+我在大的design和scope的能力上一直有问题。关键是不积极。而且之前arko提到的两点：其一，对于自己scope的提高，不要局限在pces，要往paystation去，做PSBR。往上，走到APX，Ordering，COW，CASE，直至RW等等。对architecture和细节都要有理解。不要模棱两可，不要大概。其二，要提高自己的communication的能力。写doc的能力，没事多读读doc，多收集一些非常有用的doc，打印出来，自己回味，自己看，自己整理。目前，这两方便做的都很少。对于自己下一个level的职业规划也没有任何概念。这个就是个问题了。
