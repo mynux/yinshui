@@ -1,0 +1,7 @@
+---
+layout: post
+title: ""
+date: "2021-11-29 23:53:35 -0800"
+---
+
+这个peak day总算平稳度过。从之前的readiness到之前tt bash发现的一系列问题，之前甚是忐忑不安。也算是自己作为tech lead经历了完整的PD和BF的peak。过后回味，别有一番滋味。
