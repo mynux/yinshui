@@ -9,7 +9,7 @@ relative_permalinks: false
 paginate: 20
 paginate_path: "/page/:num/"
 timezone: Asia/Shanghai  # A list of all available values can be found at https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-cdnurl: "http://cdn.mynux.cn"
+cdnurl: ""
 
 highlighter: "rouge"
 markdown: "kramdown"
