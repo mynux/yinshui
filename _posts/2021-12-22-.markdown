@@ -1,0 +1,13 @@
+---
+layout: post
+title: ""
+date: "2021-12-22 21:47:40 -0800"
+---
+
+今天做了好几件很有意义的事情
+
+* 把macbook air的苹果账号和手机的苹果账号都统一换成美国区的账号。这样每次写blog，找图片的时候就不至于这么尴尬，要登录网页上来找了。
+* 把之前一直pending很久的任务。把两个博客网站都变成https的。之前因为七牛云丫的不支持免费的https，还要网站认证。就给废弃了。现在好了，一件完成https切换。感谢cloudflare.
+* 继续尝试着新鲜事物。那种开罐头的工具。用了一下，确实很帅气。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/new-skill.jpg)  
