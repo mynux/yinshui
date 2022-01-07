@@ -1,0 +1,13 @@
+---
+layout: post
+title: ""
+date: "2022-01-04 23:02:13 -0800"
+---
+
+shit，今晚被pcbackill的remote override的环境整的不成人样。一直报一个dependent的bpas service client package的sdl not found. 这种奇怪的错误通畅有两种途径来fix
+1. 确认prod的pcbackfill环境有没有类似的问题，如果也有，那就是code change的问题，
+  1. sync最新的change和versionset
+  2. 重新active的deploy
+2. 如果没有，则是本地remote override的同步问题。最直接的方法就是**sync pcbackfill上的vs with same event id。然后重新active的deploy**.
+
+切记切记，不然每次发错误都要吃亏。
