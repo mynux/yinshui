@@ -1,0 +1,11 @@
+---
+layout: post
+title: ""
+date: "2022-01-16 13:06:24 -0800"
+---
+
+突然像发现了什么似的。偶然回想起以前看到过的一篇关于Linus Tarvolds的报道。其中一个最鲜明的特点就是安静。
+
+>I want my office to be quiet. The loudest thing in the room – by far – should be the occasional purring of the cat. And when I travel, I want to travel light. A notebook that weighs more than a kilo is simply not a good thing (yeah, I’m using the smaller 11″ macbook air, and I think weight could still be improved on, but at least it’s very close to the magical 1kg limit).
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/linus-love-macbook-air.jpg)
