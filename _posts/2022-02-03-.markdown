@@ -1,0 +1,15 @@
+---
+layout: post
+title: ""
+date: "2022-02-03 12:56:05 -0800"
+---
+
+偶然发现，在redhat实习时遇见的北大小哥对我影响很大。他的见识和知识面让我印象深刻。推荐的两本书至今才发现越读越有意思。
+
+```shell
+$ pushd temp-dir
+# come back to current directory
+$ popd
+```
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/unix-shell-book.jpg)
