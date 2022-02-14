@@ -1,0 +1,9 @@
+---
+layout: post
+title: ""
+date: "2022-02-13 20:23:20 -0800"
+---
+
+我不知道李白斗酒诗百篇的感受到底是什么，但是今晚上突然感觉赤霞珠的红酒和爵士很配。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/duckhorn-cab-dx.jpg)
