@@ -1,0 +1,9 @@
+---
+layout: post
+title: ""
+date: "2022-08-25 21:51:29 -0700"
+---
+
+人生第一辆车竟然是在三十多年后的事。这一个月感觉像过了一个世纪。搬家，学车，考驾照，，买车，搬家，，
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/car.jpg)
