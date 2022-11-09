@@ -1,0 +1,12 @@
+---
+title: 
+layout: post
+date: 2022-10-14 21:42:33
+---
+
+第一次用object c实现craft model，照着java代码然后开始在iphone上调试cropped的image，当结果出来时真是有点欣喜若狂的感觉。
+爷青回
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/first_craft_cv.PNG)  
+
+
