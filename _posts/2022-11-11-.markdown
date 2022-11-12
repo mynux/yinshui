@@ -1,0 +1,14 @@
+---
+title: 
+layout: post
+date: 2022-11-11 22:40:34
+---
+
+看着gpu memory的usage逐步下降，好爽~  
+
+从docker image开始，到ecr,sagemaker, model, endpoint 各种学习折腾完，再到看原始代码，找出三个问题
+1）cuda cache要empty。2）base image size对ecr image大小的影响，但是和gpu memory没有关系。3）gunicorn的workers数default是根据CPU数而不是GPU来确定，通过Dockerfile来制定其number。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/gpu-memory-opti.JPG)  
+
+
