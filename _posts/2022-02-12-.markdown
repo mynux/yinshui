@@ -1,6 +1,7 @@
 ---
 layout: post
-title: ""
+title: "再读梭罗杂想"
+category: memories
 date: "2022-02-12 20:23:20 -0800"
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "我所期盼的2022"
+category: memories
 date: "2022-01-01 20:46:37 -0800"
 ---
 

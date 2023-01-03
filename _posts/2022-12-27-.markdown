@@ -1,6 +1,7 @@
 ---
 title: 我所经历的2022
 layout: post
+category: memories
 date: 2022-12-27 21:58:10
 ---
 

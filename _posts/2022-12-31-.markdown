@@ -1,6 +1,7 @@
 ---
 title: 开车分心走神的问题
 layout: post
+category: memories
 date: 2022-12-31 23:48:25
 ---
 
