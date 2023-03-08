@@ -1,0 +1,15 @@
+---
+title: 
+layout: post
+date: 2023-03-04 22:02:36
+---
+
+
+在一个personal finance plan的slack group里发现了一个关于如何把brokerage的cash management account作为自己的常规checking account来赚取相对较高的利率。比如平时银行的checking account的利率几乎是0，虽然high-yeild saving account的利率比较高，但是有每个月取款次数的限制。所以除了保证有个基本的emergency fund之外的钱，要么放在high yeild saving account里面，要么直接放在money market fund里面其实是最理想的配置。于是最近试着把自己的基本配置转化成了
+1. HSBC 每个月direct deposit，然后就是通过fidelity cash management来在每月初转。转化成bonds
+2. Chase每个月剩余direct deposit来作为信用卡还款的charge，和部分股票投资的基础。
+3. portfolio的配比现在来看严重失衡，最重要的是完全忽略了公司RSU的股票占比。
+4. Setup起Discover high yeild saving account来对抗通胀。剩余一部分作为emergency funds
+
+https://frugalprofessor.com/2023-financial-recommendations/
+
