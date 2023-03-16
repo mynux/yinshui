@@ -1,0 +1,15 @@
+---
+title: 
+layout: post
+date: 2023-03-15 21:53:07
+---
+
+```
+As the tech industry boomed, it funneled large amounts of its surging deposits into investments such as U.S. Treasurys, which were paying low interest rates at the time.
+
+As the Federal Reserve began raising rates last year, venture capital dried up, leading startups to burn cash. To meet accelerating withdrawals, SVB was forced to sell off some of its government bonds at steep losses as yields on new bonds were much higher.
+```
+
+SVB事件让大家认识到加息的过程，让一些startup或者风投先流动性枯竭，然后withdraw越来越多。而SVB bank由于没有很好预判美联储加息，买了很多低利率债券。在outflow急剧增大卖出时，把账面亏损转成实际亏损就造成了储户的恐慌性withdraw。这个蝴蝶效应太可怕了。
+
+同样的，美联储升息恐怕对银行也不是一个好事。关键看有么有适合的导火索来引爆。
