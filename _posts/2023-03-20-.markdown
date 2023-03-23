@@ -1,0 +1,21 @@
+---
+title: 投资的一点心得
+layout: post
+date: 2023-03-20 17:08:48
+---
+
+CPI calendar: [https://www.bls.gov/schedule/news_release/cpi.htm](https://www.bls.gov/schedule/news_release/cpi.htm)
+
+Monetary Calendar: [https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm) 
+
+Unemployment Calendar: [https://www.bls.gov/schedule/news_release/empsit.htm](https://www.bls.gov/schedule/news_release/empsit.htm) 
+
+US Treasury Rate Trends: [https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202303](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202303)
+
+之前看很多youtuber博主对当前美国宏观经济的分析头头是道，很多宏观行业数据娓娓道来，觉得很牛逼。而且还时不时的做一些预测。等自己关注了一段时间，然后开始用第一性原则去寻找这些信息的最终来源时，发现我也能做到，而且做的比他们还好。《安全边际》里面说过，投资并不是为了获得投机般的超高额回报，而是以自己的劳动或者其应有的一定范围之内的收益。
+
+今天又从《聪明的投资者》中听到了一个非常好的strategy。很多专业者的投资组合都很难超过market(标普500)，所以对于业余投资人来说，这个就更难了。所以，从你的角度，应该把自己的投资收益当作是一种合理劳动的回报。你投入的劳动越多，你得到的回报就越多。这个就整体上makes sense了。准备开始改变自己的投资组合，一部分作定投，而且只定投market。大概占整体入市资金的20%。
+
+慢慢开始觉得咨询和圈子真的非常重要。比如当你养成了一个每天看新闻看消息的习惯，很多东西你就能第一时间知道，虽然多数时候这些信息都是price in的，但是其有利于你的预演，从而更有把握的按照自己的想法进行投资。目前自己主要看两个，WSJ和morning star。一边看新闻，一边慢慢积累。希望能通过它渐渐实现在五年内10%左右的被动收益替代。
+
+
