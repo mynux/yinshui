@@ -1,0 +1,14 @@
+---
+title: 
+layout: post
+date: 2023-03-27 21:06:55
+---
+
+
+看完Andrew Ng 五年前在讲RNN时提到的如何理解attention的intuition，就一个字，牛逼。真正体会到了，什么是只有你真正明白了，才能给被人讲明白这句话。
+
+>所谓attention，其实就像在做人工翻译时，比如从英语翻译成汉语时，翻译出每一个汉语词汇时其，需要参考多少原英文句子的词。
+
+之前看好多tutorials，各种公式，什么query,key, value， alpha, z context等等，self attention, multi-head attention, cross attention等，但是总是不明所以。
+
+原来直觉往往是first thinking principle。也明白了deep learning的突破不是某种算法的突破，而是从体层机制保证了建模过程中的可训练能力。
