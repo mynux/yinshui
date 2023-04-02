@@ -1,0 +1,9 @@
+---
+title: 
+layout: post
+date: 
+---
+
+大自然能治愈一切烦恼纠结苦闷不安。即使是短暂的。人该属于大自然。
+
+![]({{site.cdnurl}}/assets/yinshui/images/posts/seattle_spring_in_gilman_trail.jpg)  
